@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Hashed passwords/passphrases as objects
 License:    GPL+ or Artistic
@@ -18,6 +18,7 @@ BuildRequires: perl(Crypt::DES)
 BuildRequires: perl(Crypt::Eksblowfish::Bcrypt)
 BuildRequires: perl(Crypt::MySQL)
 BuildRequires: perl(Crypt::PasswdMD5)
+BuildRequires: perl(Crypt::Rijndael)
 BuildRequires: perl(Crypt::UnixCrypt_XS)
 BuildRequires: perl(Data::Entropy::Algorithms)
 BuildRequires: perl(Digest)
