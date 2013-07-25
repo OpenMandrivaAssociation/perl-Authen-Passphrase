@@ -1,15 +1,15 @@
 %define upstream_name    Authen-Passphrase
-%define upstream_version 0.007
+%define upstream_version 0.008
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%perl_convert_version 0.008
+Release:	1
 
 Summary:	Hashed passwords/passphrases as objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Authen/%{upstream_name}-%{upstream_version}.tar.lzma
+Source0:	http://www.cpan.org/modules/by-module/Authen/Authen-Passphrase-0.008.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Authen::DecHpwd)
@@ -74,4 +74,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 + Revision: 574168
 - Add Crypt-Rijndael to the build requires
 - import perl-Authen-Passphrase
+
 
