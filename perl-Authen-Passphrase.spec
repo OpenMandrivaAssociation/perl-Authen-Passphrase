@@ -1,15 +1,15 @@
 %define upstream_name    Authen-Passphrase
-%define upstream_version 0.007
+%define upstream_version 0.009
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Hashed passwords/passphrases as objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Authen/%{upstream_name}-%{upstream_version}.tar.lzma
+Url:		https://github.com/Leont/authen-passphrase
+Source0:	https://cpan.metacpan.org/authors/id/L/LE/LEONT/Authen-Passphrase-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
