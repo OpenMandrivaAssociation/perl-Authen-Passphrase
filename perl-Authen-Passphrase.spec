@@ -1,15 +1,13 @@
 %define upstream_name    Authen-Passphrase
-%define upstream_version 0.009
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.009
+Release:	2
 
 Summary:	Hashed passwords/passphrases as objects
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/Leont/authen-passphrase
-Source0:	https://cpan.metacpan.org/authors/id/L/LE/LEONT/Authen-Passphrase-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/L/LE/LEONT/Authen-Passphrase-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -49,7 +47,7 @@ The CPAN package Authen::Passphrase contains implementations of several
 specific passphrase schemes in addition to the base class.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
